@@ -1,0 +1,169 @@
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #000;
+  position: relative;
+  margin-top: 70px;
+}
+
+nav {
+  width: 100vw;
+  height: 60px;
+  padding: 5px;
+  position: fixed;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 4;
+  color: white;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff0932;
+}
+
+nav svg {
+  height: 60px;
+  width: 90px;
+  margin-right: 10px;
+}
+
+nav h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 60px;
+}
+
+.ipgroup {
+  width: 350px;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ipgroup input {
+  font-size: large;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  background-image: url(./donewave.svg);
+  background-position: bottom left;
+  background-size: cover;
+}
+
+.landing .landingDec {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.landing .signLogTab {
+  margin-right: 10vw;
+}
+
+button {
+  background-color: #ff0932;
+  padding: 5px;
+  color: white;
+  border: 1px white solid;
+  border-radius: 5px;
+  font-size: x-large;
+  text-transform: capitalize;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px white solid;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.todo h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.todo.done {
+  background-color: #616161;
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.todo.notDone {
+  background-color: #f54242;
+}
+
+.todo * {
+  overflow: visible;
+  margin-right: 10px;
+}
+
+.todo input {
+  display: none;
+}
+
+.todo svg {
+  height: 40px;
+  width: 40px;
+}
+
+.todo svg.delete {
+  height: 40px;
+  width: 30px;
+  float: right;
+}
+
+.todo svg.delete:hover polygon {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.todo svg.delete polygon {
+  -webkit-transition: ease 0.1s;
+  transition: ease 0.1s;
+}
+
+.todo svg path.tickHidden {
+  opacity: 0;
+  -webkit-transition: ease 1s;
+  transition: ease 1s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+/*# sourceMappingURL=styles.css.map */

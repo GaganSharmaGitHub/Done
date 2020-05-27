@@ -1,0 +1,114 @@
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    color: #000;
+position: relative;
+    margin-top: 70px;
+}
+nav{
+    width: 100vw;
+    height: 60px;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    z-index: 4;
+    color: white;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 9, 50);
+    svg{
+      height: 60px;
+      width: 90px;
+      margin-right: 10px;
+    }
+    h1{
+        flex: 1;
+        font-size: 60px;
+    }
+}
+.ipgroup{
+    width: 350px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    input{
+        font-size: large;
+    }
+}
+.landing{
+    display: flex;
+    height: 90vh;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    justify-content: stretch;
+    align-items: stretch;
+    background-image: url(./donewave.svg);
+    background-position: bottom left;
+    background-size: cover;
+    .landingDec{
+        flex: 1;
+    }
+    .signLogTab{
+        margin-right:10vw ;
+    }
+}
+button{
+    background-color: rgb(255, 9, 50);
+    padding: 5px;
+    color: white;
+    border: 1px white solid;
+    border-radius: 5px;
+    font-size: x-large;
+    text-transform: capitalize;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    border: 1px white solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    h4{
+        flex: 1;
+    }
+    &.done{
+    background-color: rgb(97, 97, 97);
+    opacity: 0.6;
+     text-decoration: line-through;
+    }
+    &.notDone{
+        background-color: rgb(245, 66, 66);
+    }
+    *{ overflow: visible;
+        margin-right: 10px;
+    }
+    input{
+        display: none;
+    }
+    svg{
+        height: 40px;
+        width: 40px;
+       &.delete{
+        height: 40px;
+        width: 30px;
+        float: right;
+        &:hover{
+        polygon{
+     transform: rotate(-40deg);
+
+        }
+        }
+        polygon{
+     transition: ease 0.1s;
+     }
+       }
+path.tickHidden{
+    opacity: 0;
+    transition: ease 0.1s;
+    transform-origin: center;
+    transform: rotate(40deg);
+}}}
